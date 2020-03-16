@@ -12,7 +12,7 @@ browser.get("https://user.qzone.qq.com/"+str(qq_id)+"/profile/permit")
 time.sleep(5)
 browser.switch_to.frame("ttinfo")
 browser.find_element_by_id('entry_desc').click()
-time.sleep(2)
+time.sleep(3)
 #如果你的好友超级多，不妨把这个值设置大一些
 for i in range(20):
     browser.execute_script('document.getElementsByClassName("friends-detail friends-detail-visit qz-scrollbar")[0].scrollTop=10000')
