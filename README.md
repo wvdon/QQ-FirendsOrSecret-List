@@ -1,6 +1,9 @@
 ## 爬取QQ好友列表或定位QQ好友秘密
 **可用于爬取QQ好友的列表，或者对QQ好友进行对比找出发秘密的那个人**
 **version 1**
+
+[github地址](https://github.com/wvdon/QQ-FirendsOrSecret-List) 记得Star哦
+
 #### 介绍
 - 通过selenium对模拟浏览器操作，然后获取QQ好友的列表。
 - 在多个好友的情况下可以进行定位发秘密的QQ好友范围。
@@ -29,12 +32,13 @@ chrome内打开`chrome://settings/help` 查看版本
 
 下载地址`https://sites.google.com/a/chromium.org/chromedriver/home`
 选择对应的版本号和相应操作系统版本。
+
 > 如果你不能访问google，这里为你提供80,81对应的windows版本的webdriver
 >
 >[80](http://web.wvdon.com/80/chromedriver.exe) 
 >[81](http://web.wvdon.com/81/chromedriver.exe)
 
-将 webdriver.exe 复制到 python的安装目录。
+将 webdriver.exe 复制到 python的安装目录。==记得在friends里面修改你的webdriver的路径==
 
 假设你已经完成以上步骤并没有任何问题了。
 ## 运行
@@ -56,3 +60,4 @@ python locater.py
 552
 ``
 ```
+

@@ -13,11 +13,12 @@ time.sleep(5)
 browser.switch_to.frame("ttinfo")
 browser.find_element_by_id('entry_desc').click()
 time.sleep(2)
+#如果你的好友超级多，不妨把这个值设置大一些
 for i in range(20):
     browser.execute_script('document.getElementsByClassName("friends-detail friends-detail-visit qz-scrollbar")[0].scrollTop=10000')
     time.sleep(1)
 for link in browser.find_elements_by_xpath("//*[@data-uin]"):
-    #print (link.get_attribute('data-uin'))
+    print (link.get_attribute('data-uin'))
     with open(str(qq_id)+'.txt','a') as f:
         f.write(link.get_attribute('data-uin')+'\n')
         f.close()
