@@ -22,7 +22,7 @@ git clone https://github.com/wvdon/QQ-FirendsOrSecret-List.git
 ```
 安装环境
 ```shell script
-pip install -r requests.txt
+pip install -r requirements.txt
 ```
 安装webdriver,先查看Chrome的版本，安装对于版本的工具。
 chrome内打开`chrome://settings/help` 查看版本
@@ -55,3 +55,4 @@ python locater.py
 222
 552
 ``
+```
