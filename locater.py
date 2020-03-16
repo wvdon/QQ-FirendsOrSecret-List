@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 
-l=input("输入有为是好友秘密的QQ账号，多个请用空格隔开：")
+l=input("输入与好友秘密关系为“朋友”的QQ账号，多个请用空格隔开：")
 yes_list = l.split(" ")
-ms=input("输入有为非好友秘密的QQ账号，多个请用空格隔开：")
+ms=input("输入与好友秘密关系为“朋友的朋友或非朋友”的QQ账号，多个请用空格隔开：")
 no_list = ms.split(" ")
 df = pd.DataFrame(columns=["qq"])
 count =0
